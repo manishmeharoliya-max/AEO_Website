@@ -1,0 +1,36 @@
+{
+  "name": "zepfly-backend",
+  "version": "1.0.0",
+  "description": "Node.js backend for Zepfly SaaS auth and dashboard APIs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "start:audit": "node audit-server.js",
+    "test:aeo": "node --test test/aeo.test.js",
+    "test": "node --test test/*.test.js",
+    "check:services": "node scripts/check-services.js",
+    "db:init": "node scripts/check-services.js --initialize"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "jwt",
+    "database",
+    "saas"
+  ],
+  "author": "Zepfly",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cheerio": "^1.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "ipaddr.js": "^2.5.0",
+    "jsonwebtoken": "^9.0.2",
+    "lowdb": "^1.0.0",
+    "nodemailer": "^10.0.3",
+    "pg": "^8.23.0"
+  }
+}
