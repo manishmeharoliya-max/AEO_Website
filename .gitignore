@@ -3,7 +3,7 @@
 **/.env
 **/.env.*
 !**/.env.example
-**/data/
+
 **/*.log
 **/test-results/
 **/playwright-report/
